@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/ac7de67cdd.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/94e3807b52.js" crossorigin="anonymous"></script>
+    <title>All Products - RED STORE | SHOP YOUR DREAM </title>
+</head>
+
+<body>
+    <section class="contact-page">
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/truefit logo.jpg" alt="image" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="menu-items">
+                            <li><a href="index.html">HOME </a></li>
+                            <li><a href="Products.html">PRODUCTS</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="contact.html">CONTACT US </a></li>
+                            <li><a href="Account.html">ACCOUNT </a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="ShowMenu()" alt="">
+                </div>
+            </div>
+        </header>
+        <div class="heading">
+            <h1>LET'S TALK , BUT YOU FIRST.</h1>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="wrapper">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker c-fa"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Our Location</h3>
+                        <p>Lorem, ipsum dolor sit a <br>  adipisicing </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone c-fa"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Phone Number</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, id!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-globe c-fa"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Website Address</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, id!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row " style="margin-top:100px ;">
+            <div class="contact-col c-col-left">
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.968097155718!2d77.28155871511059!3d28.450378082490058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0ab6fec0aab%3A0x87c9e10e1ae0b0fc!2sManav%20Rachna%20International%20Institute%20Of%20Research%20And%20Studies!5e0!3m2!1sen!2sin!4v1658314163713!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="caption">
+                        <h3>CHECK OUT OUR LOCATION</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-col c-col-right">
+                <form >
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea name="message" name="message" id="message"  rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class=" red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- ###################### JS For menu  -->
+    <script>
+        let menuItems = document.getElementById("menu-items");
+        menuItems.style.maxHeight = "0px";
+        function ShowMenu() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px"
+            }
+            else {
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
